@@ -1,23 +1,21 @@
-# Full Circle Racing Website
+# Full Circle Racing — Version 2
 
-First version of the Full Circle Racing website.
+This version is ready for your existing GitHub Pages repository.
 
-## Files
+## Replace/upload these files
+- index.html
+- style.css
+- script.js
+- config.js
+- README.md
 
-- `index.html` — page structure/content
-- `style.css` — visual design
-- `script.js` — mobile navigation and year
-- `README.md` — notes
+## Easiest customization
+Edit `config.js` to change:
+- YouTube / Twitch / Instagram / Discord links
+- featured video link
+- contact email
+- About text
+- featured video title
+- sim-racing gear
 
-## Before publishing
-
-Replace the placeholder YouTube, Twitch, Instagram, Discord, and email links in `index.html` with your real links.
-
-## Suggested next upgrades
-
-- Add your official logo
-- Add racing/car photography
-- Embed your latest YouTube videos
-- Add your actual social handles
-- Add a dedicated videos page
-- Connect `fullcircleracing.net`
+Your custom domain remains attached to the repository, so replacing these files will not require changing Namecheap DNS again.

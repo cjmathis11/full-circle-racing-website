@@ -1,18 +1,1 @@
-const menuButton = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
-
-if (menuButton && nav) {
-  menuButton.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
-    menuButton.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-
-  nav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
-document.getElementById("year").textContent = new Date().getFullYear();
+const c=window.FCR_CONFIG||{site:{},links:{},gear:{}};document.querySelectorAll("[data-site]").forEach(e=>{const k=e.dataset.site;if(c.site[k])e.textContent=c.site[k]});document.querySelectorAll("[data-link]").forEach(e=>{const k=e.dataset.link;if(c.links[k])e.href=c.links[k]});document.querySelectorAll("[data-gear]").forEach(e=>{const k=e.dataset.gear;if(c.gear[k])e.textContent=c.gear[k]});const em=document.querySelector("[data-email]");if(em&&c.site.email)em.href=`mailto:${c.site.email}`;document.getElementById("year").textContent=new Date().getFullYear();const b=document.querySelector(".menu"),n=document.querySelector(".header nav");if(b&&n){b.onclick=()=>{const o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)};n.querySelectorAll("a").forEach(a=>a.onclick=()=>n.classList.remove("open"))}const els=document.querySelectorAll(".reveal");if("IntersectionObserver"in window){const ob=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("visible");ob.unobserve(x.target)}}),{threshold:.12});els.forEach(e=>ob.observe(e))}else els.forEach(e=>e.classList.add("visible"));

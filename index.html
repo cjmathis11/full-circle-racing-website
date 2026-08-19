@@ -1,14 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Full Circle Racing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full Circle Racing — sim racing, racing games, videos, and gaming content. Race. Record. Repeat.">
+  <title>Full Circle Racing | Race. Record. Repeat.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Full Circle Racing home">
+      <span class="brand-mark">FCR</span>
+      <span class="brand-name">FULL CIRCLE <b>RACING</b></span>
+    </a>
 
-    <h1>FULL CIRCLE RACING</h1>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-    <p>Race. Record. Repeat.</p>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#racing">Racing</a>
+      <a href="#videos">Videos</a>
+      <a href="#socials">Socials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <p class="eyebrow">SIM RACING • GAMING • CONTENT</p>
+        <h1>FULL CIRCLE<br><span>RACING</span></h1>
+        <p class="tagline">Race. Record. Repeat.</p>
+        <p class="hero-copy">
+          Welcome to Full Circle Racing — a home for sim racing, racing games,
+          competition, builds, highlights, and everything in between.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://www.youtube.com/" target="_blank" rel="noopener">Watch on YouTube</a>
+          <a class="btn btn-secondary" href="#videos">Explore the site</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span>FCR</span>
+        <small>EST. 2026</small>
+      </div>
+      <div class="speed-lines" aria-hidden="true"></div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>BUILT FOR THE<br><span>RACING OBSESSED.</span></h2>
+      </div>
+      <div class="intro-copy">
+        <p>
+          Full Circle Racing is a racing and gaming brand focused on the excitement
+          of sim racing, competitive driving, racing games, and the stories behind
+          the wheel.
+        </p>
+        <p>
+          Whether you're here for a new video, a close finish, a new setup, or just
+          another excuse to talk about cars, you're in the right place.
+        </p>
+      </div>
+    </section>
+
+    <section class="section cards-section" id="racing">
+      <div class="section-heading centered">
+        <p class="eyebrow">02 / THE CONTENT</p>
+        <h2>WHAT'S IN THE <span>GARAGE?</span></h2>
+      </div>
+
+      <div class="cards">
+        <article class="content-card">
+          <div class="card-number">01</div>
+          <div class="card-icon">🏁</div>
+          <h3>SIM RACING</h3>
+          <p>Competitive races, leagues, setups, challenges, and the pursuit of the perfect lap.</p>
+          <a href="#videos">View content →</a>
+        </article>
+
+        <article class="content-card">
+          <div class="card-number">02</div>
+          <div class="card-icon">🎮</div>
+          <h3>RACING GAMES</h3>
+          <p>From serious simulators to the latest racing titles, we cover the games worth driving.</p>
+          <a href="#videos">View content →</a>
+        </article>
+
+        <article class="content-card">
+          <div class="card-number">03</div>
+          <div class="card-icon">🎥</div>
+          <h3>VIDEOS</h3>
+          <p>Race footage, highlights, reviews, experiments, and the moments that deserve another lap.</p>
+          <a href="#videos">Watch videos →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section featured" id="videos">
+      <div class="featured-copy">
+        <p class="eyebrow">03 / LATEST</p>
+        <h2>THE NEXT<br><span>LAP STARTS HERE.</span></h2>
+        <p>
+          This area is ready for your latest YouTube videos. Replace the sample
+          button links with your channel or individual video URLs.
+        </p>
+        <a class="btn btn-primary" href="https://www.youtube.com/" target="_blank" rel="noopener">Visit YouTube Channel</a>
+      </div>
+      <div class="video-placeholder">
+        <div class="play">▶</div>
+        <p>YOUR LATEST VIDEO</p>
+        <small>Replace this panel with a YouTube embed later.</small>
+      </div>
+    </section>
+
+    <section class="section socials" id="socials">
+      <div class="section-heading centered">
+        <p class="eyebrow">04 / CONNECT</p>
+        <h2>FOLLOW THE <span>RACE.</span></h2>
+      </div>
+
+      <div class="social-grid">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-link">
+          <strong>YouTube</strong><span>Watch the videos →</span>
+        </a>
+        <a href="https://www.twitch.tv/" target="_blank" rel="noopener" class="social-link">
+          <strong>Twitch</strong><span>Catch the streams →</span>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-link">
+          <strong>Instagram</strong><span>See the latest →</span>
+        </a>
+        <a href="https://discord.com/" target="_blank" rel="noopener" class="social-link">
+          <strong>Discord</strong><span>Join the community →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div>
+        <p class="eyebrow">05 / CONTACT</p>
+        <h2>LET'S TALK<br><span>RACING.</span></h2>
+      </div>
+      <div class="contact-box">
+        <p>For collaborations, business inquiries, or just to say hello:</p>
+        <a href="mailto:contact@fullcircleracing.net">contact@fullcircleracing.net</a>
+        <small>Replace this email address with your preferred contact email.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>FULL CIRCLE RACING</strong>
+      <span>Race. Record. Repeat.</span>
+    </div>
+    <p>© <span id="year"></span> Full Circle Racing. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
